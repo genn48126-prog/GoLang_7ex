@@ -1,8 +1,8 @@
 # Ledger Service
 
-Сервис учета финансов. Хранит данные в PostgreSQL, кэширует отчеты в Redis.
+РЎРµСЂРІРёСЃ СѓС‡РµС‚Р° С„РёРЅР°РЅСЃРѕРІ. РҐСЂР°РЅРёС‚ РґР°РЅРЅС‹Рµ РІ PostgreSQL, РєСЌС€РёСЂСѓРµС‚ РѕС‚С‡РµС‚С‹ РІ Redis.
 
-## Запуск инфраструктуры
+## Р—Р°РїСѓСЃРє РёРЅС„СЂР°СЃС‚СЂСѓРєС‚СѓСЂС‹
 ```bash
 docker run -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=cashapp -d postgres:15
 docker run -p 6379:6379 --name cashcraft-redis -d redis:7-alpine
